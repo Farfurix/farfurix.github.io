@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // var element = $('<div>really editable</div>')[0];
+    var element = document.createElement('div');
+
+    element.setAttribute('contenteditable', 'true');
+    document.body.appendChild(element);
+
+    console.log('element.isContentEditable:', element.isContentEditable);
+    throw new Error(element.isContentEditable);
+</script>
+</body>
+</html>
